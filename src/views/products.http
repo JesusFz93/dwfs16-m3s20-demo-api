@@ -1,0 +1,16 @@
+# @api = http://awm.megatechway.com:4000/api/auth
+@api = http://localhost:4009/api/products
+
+### obtener productos
+{{api}}
+
+### crear producto
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Foco inteligente",
+    "description": "Para todo hogar inteligente",
+    "price": 23,
+    "available": true
+}
