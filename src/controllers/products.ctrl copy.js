@@ -19,7 +19,7 @@ const obtenerProducto = (req, res) => {
         return res.json({
             ok: true,
             msg: "Producto obtenido",
-            data: []
+            data: {}
         })
     } catch (error) {
         return res.status(500).json({
@@ -35,7 +35,7 @@ const crearProducto = (req, res) => {
         return res.status(201).json({
             ok: true,
             msg: "Producto creado",
-            data: []
+            data: {}
         })
     } catch (error) {
         return res.status(500).json({
@@ -51,7 +51,7 @@ const actualizarProducto = (req, res) => {
         return res.json({
             ok: true,
             msg: "Producto actualizado",
-            data: []
+            data: {}
         })
     } catch (error) {
         return res.status(500).json({
@@ -67,7 +67,7 @@ const eliminarProducto = (req, res) => {
         return res.json({
             ok: true,
             msg: "Producto eliminado",
-            data: []
+            data: {}
         })
     } catch (error) {
         return res.status(500).json({

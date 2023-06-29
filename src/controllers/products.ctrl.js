@@ -3,7 +3,7 @@ const Product = require('../models/product');
 const obtenerProductos = async (req, res) => {
     try {
 
-        const products = await Product.find({ available: true });
+        const products = await Product.find();
 
         return res.json({
             ok: true,
@@ -19,12 +19,16 @@ const obtenerProductos = async (req, res) => {
     }
 }
 
-const obtenerProducto = (req, res) => {
+const obtenerProducto = async (req, res) => {
     try {
+        const { id } = req.params;
+
+        const product = await Product.findById(id);
+
         return res.json({
             ok: true,
             msg: "Producto obtenido",
-            data: []
+            data: product
         })
     } catch (error) {
         return res.status(500).json({
@@ -46,7 +50,17 @@ const crearProducto = async (req, res) => {
             available
         }
 
-        const newProduct = await Product(product);
+        const productoEncontrado = Product.find({ name: name });
+
+        if (productoEncontrado) {
+            return res.status(400).json({
+                ok: false,
+                msg: "El producto ya existe",
+                data: {}
+            })
+        }
+
+        const newProduct = await Product(product).save();
 
         return res.status(201).json({
             ok: true,
@@ -62,12 +76,25 @@ const crearProducto = async (req, res) => {
     }
 }
 
-const actualizarProducto = (req, res) => {
+const actualizarProducto = async (req, res) => {
     try {
+        const { id } = req.params;
+        const { name, price, description, available } = req.body;
+
+        const product = {
+            name,
+            price,
+            description,
+            available
+        }
+
+        const updatedProduct = await Product.findByIdAndUpdate(id, product, { new: true });
+
+
         return res.json({
             ok: true,
             msg: "Producto actualizado",
-            data: []
+            data: updatedProduct
         })
     } catch (error) {
         return res.status(500).json({
@@ -78,12 +105,16 @@ const actualizarProducto = (req, res) => {
     }
 }
 
-const eliminarProducto = (req, res) => {
+const eliminarProducto = async (req, res) => {
     try {
+        const { id } = req.params;
+
+        const deleteProduct = await Product.findByIdAndRemove(id);
+
         return res.json({
             ok: true,
             msg: "Producto eliminado",
-            data: []
+            data: deleteProduct
         })
     } catch (error) {
         return res.status(500).json({

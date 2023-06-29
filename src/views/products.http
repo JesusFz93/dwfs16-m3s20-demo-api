@@ -4,13 +4,28 @@
 ### obtener productos
 {{api}}
 
+### obtener producto
+{{api}}/649c2b5881e15dc7f83c00bc
+
 ### crear producto
 POST {{api}}
 Content-Type: application/json
 
 {
-    "name": "Foco inteligente",
+    "name": "Aire",
     "description": "Para todo hogar inteligente",
-    "price": 23,
+    "price": 444,
     "available": true
 }
+
+### actualizar producto
+PUT {{api}}/649c2b5881e15dc7f83c00bc
+Content-Type: application/json
+
+{
+    "price": 333,
+    "available": false
+}
+
+### eliminar producto
+DELETE {{api}}/649c2b5881e15dc7f83c00bc
