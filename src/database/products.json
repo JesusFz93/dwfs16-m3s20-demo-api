@@ -1,0 +1,118 @@
+[
+    {
+        "id": "1",
+        "name": "Mayonesa con Limón 507 g",
+        "brand": "McCormick",
+        "description": "N/A",
+        "image": "https://hebmx.vtexassets.com/arquivos/ids/309268-1600-1600?v=638159593876700000&width=1600&height=1600&aspect=true",
+        "format": "Frasco",
+        "size": "507",
+        "unitMeasure": "gr",
+        "category": "Refrigerador",
+        "stock": 10,
+        "active": true,
+        "store": [
+            {
+                "name": "HEB - Morelos",
+                "area": "Abarrotes",
+                "aisle": "1",
+                "section": "Digestivos",
+                "price": 100,
+                "currency": "MXN"
+            },
+            {
+                "name": "HEB - Online",
+                "area": "N/A",
+                "aisle": "Aderezos y Salsas",
+                "section": "Mayonesas",
+                "price": 76.50,
+                "currency": "MXN"
+            }
+        ],
+        "user": "JFERNANDEZ",
+        "buyQty": 1,
+        "createdAt": "2023-06-29T00:00:00.000Z",
+        "updatedAt": "2023-06-29T00:00:00.000Z"
+    },
+    {
+        "id": "2",
+        "name": "Electrolit Suero Lima-Limón 625 Ml",
+        "brand": "Electrolit",
+        "description": "Solución esterelizada de electrolitos orales",
+        "image": "https://hebmx.vtexassets.com/arquivos/ids/601304-1600-1600?v=638218513652500000&width=1600&height=1600&aspect=true",
+        "format": "Solución",
+        "size": "625",
+        "unitMeasure": "ml",
+        "category": "Refrigerador",
+        "stock": 10,
+        "active": true,
+        "store": [
+            {
+                "name": "HEB - Online",
+                "area": "N/A",
+                "aisle": "Farmacia",
+                "section": "Digestivos",
+                "price": 21.90,
+                "currency": "MXN"
+            }
+        ],
+        "user": "JFERNANDEZ",
+        "buyQty": 1,
+        "createdAt": "2023-06-29T00:00:00.000Z",
+        "updatedAt": "2023-06-29T00:00:00.000Z"
+    },
+    {
+        "id": "3",
+        "name": "Plátano",
+        "brand": "Platanazo",
+        "description": "N/A",
+        "image": "https://hebmx.vtexassets.com/arquivos/ids/777751-1600-1600?v=638218885887100000&width=1600&height=1600&aspect=true",
+        "format": "A granel",
+        "size": "1",
+        "unitMeasure": "kg",
+        "category": "Refrigerador",
+        "stock": 10,
+        "active": true,
+        "store": [
+            {
+                "name": "HEB - Online",
+                "area": "N/A",
+                "aisle": "Frutas y Verduras",
+                "section": "Frutas",
+                "price": 14.95,
+                "currency": "MXN"
+            }
+        ],
+        "user": "JFERNANDEZ",
+        "buyQty": 1,
+        "createdAt": "2023-06-29T00:00:00.000Z",
+        "updatedAt": "2023-06-29T00:00:00.000Z"
+    },
+    {
+        "id": "4",
+        "name": "Mandarina Bella en Bolsa 1.36 1.36 Kg",
+        "brand": "Bella",
+        "description": "N/A",
+        "image": "https://hebmx.vtexassets.com/arquivos/ids/772435-1600-1600?v=638218875486270000&width=1600&height=1600&aspect=true",
+        "format": "Bolsa",
+        "size": "1.36",
+        "unitMeasure": "kg",
+        "category": "Refrigerador",
+        "stock": 10,
+        "active": true,
+        "store": [
+            {
+                "name": "HEB - Online",
+                "area": "N/A",
+                "aisle": "Frutas y Verduras",
+                "section": "Frutas",
+                "price": 113.00,
+                "currency": "MXN"
+            }
+        ],
+        "user": "JFERNANDEZ",
+        "buyQty": 1,
+        "createdAt": "2023-06-29T00:00:00.000Z",
+        "updatedAt": "2023-06-29T00:00:00.000Z"
+    }
+]
